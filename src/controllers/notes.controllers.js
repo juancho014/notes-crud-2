@@ -24,4 +24,6 @@ noteCtrl.updateNote = (req,res)=>{
 noteCtrl.deleteNote = (req,res)=>{
     res.send('delete note')
 }
+
+
 module.exports=noteCtrl;    

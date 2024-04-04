@@ -27,7 +27,9 @@ app.get('/', (req, res) => {
 });
 
 app.use(require('./routes/index.routes'));
-app.use(require('./routes/notes.routes'))
+app.use(require('./routes/notes.routes'));
+app.use(require('./routes/user.routes'));
+
 
 app.use(express.static(path.join(__dirname, 'public')));
 
