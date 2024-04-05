@@ -5,12 +5,17 @@ const path = require('path');
 const exphbs = require('express-handlebars')
 const morgan = require('morgan');
 const app = express();
+const method =require('method-override')
 
 
 app.use(morgan('dev'))
-
 app.use(express.urlencoded({ extended: false }));
 app.set('views', path.join(__dirname, 'views'));
+app.use(method('_method'))
+
+
+
+
 const hbs = exphbs.create({
     defaultLayout: "main",
     layoutsDir: path.join(app.get("views"), "layouts"),

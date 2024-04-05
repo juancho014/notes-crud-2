@@ -6,7 +6,8 @@ userCtrl.renderSignUpForm=(req,res)=>{
 }
 
 userCtrl.signup=(req,res)=>{
-    res.send('signup')
+    console.log(req.body);
+    res.send('recibido')
 }
 
 userCtrl.renderSigninForm=(req,res)=>{
@@ -20,5 +21,6 @@ userCtrl.signin=(req,res)=>{
 userCtrl.logout=(req,res)=>{
     res.send('logout')
 }
+
 
 module.exports=userCtrl;

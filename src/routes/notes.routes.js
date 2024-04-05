@@ -10,7 +10,7 @@ const{renderNoteForm,
       //new notes
 router.get('/notes/add',renderNoteForm)
 
-router.post('/notes/add',createNewNote)
+router.post('/notes/new-note',createNewNote)
 
 //get all notas todas las notas
 router.get('/notes',renderNote)
